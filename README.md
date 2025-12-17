@@ -17,7 +17,7 @@ core backend concepts like REST APIs, layered architecture, JPA, and MySQL.
 
 ---
 
-## 📌 Features (Completed till Step 4)
+## 📌 Features
 - Create User (POST)
 - Get All Users (GET)
 - Get User by ID
@@ -28,26 +28,36 @@ core backend concepts like REST APIs, layered architecture, JPA, and MySQL.
 
 ---
 
+## Package Details
+
+- controller: handles HTTP requests
+- service: business logic
+- repository: database access
+- model: entity classes
+- exception: custom exceptions
+
+
 ## 🧱 Project Architecture
 
+```text
 user-management
 ├── src
-│ └── main
-│ ├── java
-│ │ └── com.example.usermanagement
-│ │ ├── controller
-│ │ │ └── UserController.java
-│ │ ├── service
-│ │ │ └── UserService.java
-│ │ ├── repository
-│ │ │ └── UserRepository.java
-│ │ ├── model
-│ │ │ └── User.java
-│ │ ├── exception
-│ │ │ └── UserNotFoundException.java
-│ │ └── UserManagementApplication.java
-│ └── resources
-│ └── application.properties
+│   └── main
+│       ├── java
+│       │   └── com.example.usermanagement
+│       │       ├── controller
+│       │       │   └── UserController.java
+│       │       ├── service
+│       │       │   └── UserService.java
+│       │       ├── repository
+│       │       │   └── UserRepository.java
+│       │       ├── model
+│       │       │   └── User.java
+│       │       ├── exception
+│       │       │   └── UserNotFoundException.java
+│       │       └── UserManagementApplication.java
+│       └── resources
+│           └── application.properties
 ├── pom.xml
 ├── README.md
 
