@@ -36,8 +36,22 @@ core backend concepts like REST APIs, layered architecture, JPA, and MySQL.
 - model: entity classes
 - exception: custom exceptions
 
+---
 
+Postman (Client)
+↓ JSON
+Controller (REST API)
+↓ Java Object
+Service (Business Logic)
+↓
+Repository (JPA)
+↓
+Hibernate (ORM)
+↓ SQL
+MySQL Database
 ## 🧱 Project Architecture
+
+---
 
 ```text
 user-management
@@ -61,16 +75,6 @@ user-management
 ├── pom.xml
 ├── README.md
 
-Postman (Client)
-↓ JSON
-Controller (REST API)
-↓ Java Object
-Service (Business Logic)
-↓
-Repository (JPA)
-↓
-Hibernate (ORM)
-↓ SQL
-MySQL Database
+
 
 
